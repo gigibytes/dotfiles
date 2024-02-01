@@ -1,6 +1,0 @@
-# Customize the prompt char
-
-[character]
-success_symbol = '[󰈺](bold green)' # % for zsh
-error_symbol = '[󱏳](bold red)'
-
