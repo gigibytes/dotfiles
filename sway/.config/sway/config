@@ -37,6 +37,8 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 # Requires: desktop-backgrounds-compat, swaybg
 # Copy whatever wallpaper you want to the sway dir with name wallpaper
 output * bg ./wallpaper fill
+# flip 2nd monitor vertically
+output HDMI-A-2 transform 90
 
 #Window Settings
 default_border none
@@ -63,17 +65,19 @@ exec_always {
 }
 
 #Keyboard Buttons for System Settings
+#Removed for Desktop config
 #Audio
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+#bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+#bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+#bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 #Mic button
-bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+#bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 #Brightness - requires 'light' util
-bindsym XF86MonBrightnessUp exec light -A 3.5
-bindsym XF86MonBrightnessDown exec light -U 3.5
+#bindsym XF86MonBrightnessUp exec light -A 3.5
+#bindsym XF86MonBrightnessDown exec light -U 3.5
 
-
+# Enable Numlock on start
+input keyboard xkb_numlock enabled
 #
 # Example configuration:
 #
