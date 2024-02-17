@@ -6,4 +6,11 @@ end
 
 starship init fish | source
 
-#how do i add aliases?
+# ALIASES (ain't here)
+# aliases are defined with alias -s and go to the functions file.
+
+# ENVIRONMENT VARIABLES
+set EDITOR nvim
+
+# zoxide setup
+zoxide init fish | source
