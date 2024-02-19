@@ -67,7 +67,7 @@
         "bat": "BAT2"
     },
     "network": {
-        "interface": "wlp*", // (Optional) To force the use of this interface
+        "interface": "wl*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
