@@ -3,11 +3,11 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 14, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "network", "battery", "battery#bat2", "clock"],
+    "modules-right": ["pulseaudio", "network", "network#2", "battery", "battery#bat2", "clock"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -67,32 +67,39 @@
         "bat": "BAT2"
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "interface": "wlp*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    },
+	},
+	"network#2": {
+			"interface": "proton0", // (Optional) To force the use of this interface
+			"format-ethernet": "vpn:  ",
+			"tooltip-format": "{ifname} via {gwaddr} ",
+			"format-disconnected": "vpn:  ",
+			"format-alt": "{ifname}: {ipaddr}/{cidr}"
+	},
+	"pulseaudio": {
+			// "scroll-step": 1, // %, can be a float
+			"format": "{volume}% {icon} {format_source}",
+			"format-bluetooth": "{volume}% {icon} {format_source}",
+			"format-bluetooth-muted": " {icon} {format_source}",
+			"format-muted": " {format_source}",
+			"format-source": "{volume}% ",
+			"format-source-muted": "",
+			"format-icons": {
+					"headphone": "",
+					"hands-free": "",
+					"headset": "",
+					"phone": "",
+					"portable": "",
+					"car": "",
+					"default": ["", "", ""]
+			},
+			"on-click": "pavucontrol"
+	},
 }
 
