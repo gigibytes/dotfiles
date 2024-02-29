@@ -42,6 +42,7 @@ export EDITOR=nvim
 ## for flameshot per https://bbs.archlinux.org/viewtopic.php?id=284847
 export QT_QPA_PLATFORM=wayland
 export XDG_CURRENT_DESKTOP=sway
+export GRIM_DEFAULT_DIR=/home/gigi/Pictures/Screenshots/
 
 #Prompt customization
 #GREEN="\[$(tput setaf 6)\]"
