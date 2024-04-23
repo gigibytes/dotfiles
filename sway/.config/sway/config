@@ -42,7 +42,8 @@ output * bg ./wallpaper fill
 default_border none
 default_floating_border none
 titlebar_border_thickness 0
-font mono 0
+
+font mono 1
 #colors: border, then background, then text.
 #border color is what matters here since font size is 0
 client.focused #1e1e2e #000000 #000000
