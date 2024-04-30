@@ -133,6 +133,8 @@ bindsym Alt+Print exec grim -g "$(slurp -d)"
     # Start a browser window
     bindsym $mod+Shift+b exec $browser
 
+    # Open Emacs
+    bindsym $mod+Shift+e exec emacs
     ### END CUSTOM
     
     # Start a terminal
