@@ -76,7 +76,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
 	},
 	"network#2": {
-			"interface": "proton0", // (Optional) To force the use of this interface
+			"interface": "wg0", // (Optional) To force the use of this interface
 			"format-ethernet": "vpn:  ",
 			"tooltip-format": "{ifname} via {gwaddr} ",
 			"format-disconnected": "vpn:  ",
