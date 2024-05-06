@@ -121,8 +121,9 @@ bar {
 }
 
 #Print Screen with grim Shortcut
-bindsym Print exec grim
-bindsym Alt+Print exec grim -g "$(slurp -d)"
+#Forced to add 'fish -c' here to get grim to respect the env variable for GRIM_DEFAULT_DIR
+bindsym Print exec fish -c grim
+bindsym Alt+Print exec fish -c 'grim -g "$(slurp -d)"'
 # ^ select an area to screenshot
 
 ## Key bindings
