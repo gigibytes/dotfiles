@@ -105,7 +105,7 @@
        ;;taskrunner        ; taskrunner for all your projects
        ;;terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
-       ;;tree-sitter       ; syntax and parsing, sitting in a tree...
+       tree-sitter       ; syntax and parsing, sitting in a tree...
        ;;upload            ; map local to remote projects via ssh/ftp
 
        :os
@@ -151,13 +151,13 @@
        ;;lua               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
-       ;;nix               ; I hereby declare "nix geht mehr!"
+       nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        (org +roam2)               ; organize your plain life in plain text
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
-       ;;python            ; beautiful is better than ugly
+       (python +lsp +pyright +tree-sitter)            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
