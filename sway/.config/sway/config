@@ -15,7 +15,7 @@ set $up k
 set $right l
 # set Caps Lock to Control
 input "type:keyboard" {
-    xkb_options ctrl:nocaps
+    xkb_options ctrl:nocaps,compose:ins
 }
 # Your preferred terminal emulator
 # Recommends: foot
@@ -119,6 +119,9 @@ bindsym $mod+Escape exec $lock
 bar {
     swaybar_command waybar
 }
+
+# Make systemctl import DISPLAY env variable so apps can xdg-open
+exec systemctl --user import-environment DISPLAY
 
 #Print Screen with grim Shortcut
 #Forced to add 'fish -c' here to get grim to respect the env variable for GRIM_DEFAULT_DIR
