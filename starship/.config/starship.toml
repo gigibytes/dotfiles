@@ -6,21 +6,22 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+$shell\
 $cmd_duration\
 $line_break\
-$python\
-$character"""
+$character
+"""
 
 [directory]
 style = "blue"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "green"
+style = "white"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
+style = "white"
 conflicted = "​"
 untracked = "​"
 modified = "​"
@@ -31,19 +32,20 @@ stashed = "≡"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+style = "white"
 
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
 
-[python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
-
-# Customize the prompt char
-
+# Prompt Character Settings
 [character]
-success_symbol = '[󰈺](bold green)' # % for zsh
-error_symbol = '[󱏳](bold red)'
+success_symbol = "[](green)"
+error_symbol = "[](red)"
 
+# Indicate current shell
+[shell]
+style = "bright-black"
+fish_indicator = "via 🐟"
+bash_indicator = "via 💲"
+disabled = false
