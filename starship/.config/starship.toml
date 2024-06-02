@@ -46,6 +46,6 @@ error_symbol = "[](red)"
 # Indicate current shell
 [shell]
 style = "bright-black"
-fish_indicator = "via 🐟"
-bash_indicator = "via 💲"
+fish_indicator = " via 🐟"
+bash_indicator = " via 💲"
 disabled = false
