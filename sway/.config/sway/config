@@ -30,6 +30,8 @@ set $rofi_cmd /usr/bin/rofi \
 # Shows a combined list of the applications with desktop files and
 # executables from PATH.
 set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+# List windows with rofi
+bindsym $mod+Tab exec $rofi_cmd -show window
 
 ### Output configuration
 #
