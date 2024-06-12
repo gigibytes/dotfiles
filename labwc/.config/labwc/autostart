@@ -1,0 +1,17 @@
+# Wallpaper config: save image in labwc config dir as 'wallpaper'
+swaybg -i ./wallpaper &
+
+# Bar
+waybar >/dev/null 2>&1 &
+
+# Notifications
+# TODO eww?
+mako >/dev/null 2>&1 &
+
+# Idle config
+swayidle -w \
+	timeout 300 'swaylock -f -c 000000' \
+	timeout 600 'wlopm --off \*' \
+	resume 'wlopm --on \*' \
+	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
+
